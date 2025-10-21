@@ -1,0 +1,178 @@
+{
+  "participants": [
+    "Mexico",
+    "Francia",
+    "Brazil",
+    "EUA",
+    "Alemania",
+    "Japon"
+  ],
+  "games": [
+    {
+      "id": 1,
+      "label": "Juego inaugural",
+      "date": "2026-06-11T18:00:00-05:00",
+      "venue": {
+        "stadium": "Estadio Azteca",
+        "city": "Ciudad de México",
+        "country": "México",
+        "image": "estadio-azteca"
+      },
+      "teams": ["Mexico", "EUA"]
+    },
+    {
+      "id": 2,
+      "label": "Juego 2",
+      "date": "2026-06-11T21:00:00-05:00",
+      "venue": {
+        "stadium": "Estadio Akron",
+        "city": "Guadalajara",
+        "country": "México",
+        "image": "estadio-akron"
+      },
+      "teams": ["Alemania", "Japon"]
+    },
+    {
+      "id": 3,
+      "label": "Juego 12",
+      "date": "2026-06-14T16:00:00-05:00",
+      "venue": {
+        "stadium": "Estadio BBVA",
+        "city": "Monterrey",
+        "country": "México",
+        "image": "estadio-bbva"
+      },
+      "teams": ["Brazil", "Japon"]
+    },
+    {
+      "id": 4,
+      "label": "Juego 24",
+      "date": "2026-06-17T19:00:00-05:00",
+      "venue": {
+        "stadium": "Estadio Azteca",
+        "city": "Ciudad de México",
+        "country": "México",
+        "image": "estadio-azteca"
+      },
+      "teams": ["EUA", "Francia"]
+    },
+    {
+      "id": 5,
+      "label": "Segundo juego",
+      "date": "2026-06-18T18:30:00-05:00",
+      "venue": {
+        "stadium": "Estadio Akron",
+        "city": "Guadalajara",
+        "country": "México",
+        "image": "estadio-akron"
+      },
+      "teams": ["Francia", "Brazil"]
+    },
+    {
+      "id": 6,
+      "label": "Juego 36",
+      "date": "2026-06-20T15:00:00-05:00",
+      "venue": {
+        "stadium": "Estadio BBVA",
+        "city": "Monterrey",
+        "country": "México",
+        "image": "estadio-bbva"
+      },
+      "teams": ["Mexico", "Brazil"]
+    },
+    {
+      "id": 7,
+      "label": "Juego 48",
+      "date": "2026-06-23T20:00:00-05:00",
+      "venue": {
+        "stadium": "Estadio Akron",
+        "city": "Guadalajara",
+        "country": "México",
+        "image": "estadio-akron"
+      },
+      "teams": ["Francia", "Alemania"]
+    },
+    {
+      "id": 8,
+      "label": "Tercer juego",
+      "date": "2026-06-24T13:00:00-05:00",
+      "venue": {
+        "stadium": "Estadio Azteca",
+        "city": "Ciudad de México",
+        "country": "México",
+        "image": "estadio-azteca"
+      },
+      "teams": ["Mexico", "Alemania"]
+    },
+    {
+      "id": 9,
+      "label": "Juego 54",
+      "date": "2026-06-24T20:30:00-05:00",
+      "venue": {
+        "stadium": "Estadio BBVA",
+        "city": "Monterrey",
+        "country": "México",
+        "image": "estadio-bbva"
+      },
+      "teams": ["EUA", "Japon"]
+    },
+    {
+      "id": 10,
+      "label": "Juego 66",
+      "date": "2026-06-26T18:00:00-05:00",
+      "venue": {
+        "stadium": "Estadio Akron",
+        "city": "Guadalajara",
+        "country": "México",
+        "image": "estadio-akron"
+      },
+      "teams": ["Mexico", "Francia"]
+    },
+    {
+      "id": 11,
+      "label": "Juego 75",
+      "date": "2026-06-29T17:00:00-05:00",
+      "venue": {
+        "stadium": "Estadio BBVA",
+        "city": "Monterrey",
+        "country": "México",
+        "image": "estadio-bbva"
+      },
+      "teams": ["Alemania", "EUA"]
+    },
+    {
+      "id": 12,
+      "label": "Juego 79",
+      "date": "2026-06-30T20:00:00-05:00",
+      "venue": {
+        "stadium": "Estadio Azteca",
+        "city": "Ciudad de México",
+        "country": "México",
+        "image": "estadio-azteca"
+      },
+      "teams": ["Brazil", "Francia"]
+    },
+    {
+      "id": 13,
+      "label": "Juego 92",
+      "date": "2026-07-05T19:00:00-05:00",
+      "venue": {
+        "stadium": "Estadio Azteca",
+        "city": "Ciudad de México",
+        "country": "México",
+        "image": "estadio-azteca"
+      },
+      "teams": ["Mexico", "Japon"]
+    }
+  ],
+  "meta": {
+    "source": "Calendario local",
+    "generated_at": "2025-10-21T00:00:00Z",
+    "timezone": "America/Mexico_City",
+    "notes": [
+      "Se agregaron imágenes de los estadios al atributo 'image'.",
+      "Se estandarizaron fechas a 2026 con formato ISO 8601.",
+      "Los horarios varían y algunos se repiten."
+    ]
+  }
+}

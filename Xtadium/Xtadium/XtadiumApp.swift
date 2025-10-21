@@ -8,10 +8,21 @@
 import SwiftUI
 
 @main
-struct XtadiumApp: App {
+struct WorldCupTicketsApp: App {
+    @StateObject private var session = SessionViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Group {
+                if session.isAuthenticated {
+                    TicketsView()
+                        .environmentObject(session)
+                } else {
+                    LoginView()
+                        .environmentObject(session)
+                }
+            }
         }
     }
 }
+
