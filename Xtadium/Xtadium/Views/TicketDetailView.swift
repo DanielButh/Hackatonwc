@@ -15,6 +15,7 @@ struct TicketDetailView: View {
                         .padding(.bottom, 8)*/
                         .aspectRatio(1, contentMode: .fit)
                         .edgesIgnoringSafeArea(.top)
+                        
                     
                 }
                 VStack {
@@ -70,8 +71,10 @@ struct TicketDetailView: View {
                 .background(Color.white)
                 .cornerRadius(30, corners: [.topLeft, .topRight])
                 .offset(x: 0, y:-30.0)
+                .shadow(radius: 70)
             }
             .edgesIgnoringSafeArea(.top)
+            .padding(.top, -120)
         }
         .navigationTitle("Boleto \(ticket.ticket_id)")
         .navigationBarTitleDisplayMode(.inline)

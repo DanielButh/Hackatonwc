@@ -47,12 +47,12 @@ struct PanicView: View {
                     Text("ENVIAR ALERTA DE PÁNICO")
                         .font(.title3.bold())
                         .padding(.vertical, 28)
-                        .frame(maxWidth: .infinity)
+                        .frame(maxWidth: .infinity, maxHeight: 250)
                         .background(.red)
                         .foregroundStyle(.white)
-                        .clipShape(RoundedRectangle(cornerRadius: 24))
+                        .clipShape(RoundedRectangle(cornerRadius: 74))
                         .shadow(radius: 8)
-                        .padding(.horizontal)
+                        .padding(.horizontal, 50)
                 }
 
                 Spacer(minLength: 20)

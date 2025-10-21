@@ -16,16 +16,11 @@ struct LoadView: View {
             LoginView() // <- Tu vista principal
         } else {
             VStack(spacing: 10) {
-                Image(systemName: "mustache") // Puedes reemplazar con tu logo
+                Image("logo-xtadium") // Puedes reemplazar con tu logo
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 100, height: 100)
+                    .frame(width: 250, height: 250)
                     .foregroundColor(.black)
-                
-                Text("Xtadium")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(.primary)
                 
                 Text("Creado por xCoders") // <- Cambia esto con tu nombre
                     .font(.footnote)
