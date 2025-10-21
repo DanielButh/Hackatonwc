@@ -34,7 +34,7 @@ struct PanicView: View {
                     Task {
                         do {
                             try await PanicService.requestAuthorizationIfNeeded()
-                            let msg = vm.panicMessage()
+                            let msg = vm.panicMessageAtTap(now: Date()) // 👈 calcula según el “ahora”
                             try await PanicService.schedulePanicAlert(message: msg)
                             resultText = "Notificación enviada:\n\(msg)"
                             showingResult = true
@@ -46,7 +46,6 @@ struct PanicView: View {
                 } label: {
                     Text("ENVIAR ALERTA DE PÁNICO")
                         .font(.title3.bold())
-                        .multilineTextAlignment(.center)
                         .padding(.vertical, 28)
                         .frame(maxWidth: .infinity)
                         .background(.red)

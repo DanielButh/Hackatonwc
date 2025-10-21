@@ -32,11 +32,11 @@ struct TicketsView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     if let name = session.displayName {
-                        Text(name).font(.callout)
+                        Text(name)
+                            .font(.callout)
+                            .fixedSize()
+                            .padding()
                     }
-                }
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Salir") { session.logout() }
                 }
             }
             .onAppear(perform: load)

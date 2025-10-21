@@ -5,12 +5,11 @@ enum PanicService {
     static func requestAuthorizationIfNeeded() async throws {
         let center = UNUserNotificationCenter.current()
         let settings = await center.notificationSettings()
-        switch settings.authorizationStatus {
-        case .notDetermined:
+        if settings.authorizationStatus == .notDetermined {
             let granted = try await center.requestAuthorization(options: [.alert, .sound, .badge])
-            guard granted else { throw NSError(domain: "Panic", code: 1, userInfo: [NSLocalizedDescriptionKey: "Permiso de notificaciones denegado"]) }
-        default:
-            break
+            if !granted {
+                throw NSError(domain: "Panic", code: 1, userInfo: [NSLocalizedDescriptionKey: "Permiso de notificaciones denegado"])
+            }
         }
     }
 
@@ -20,7 +19,7 @@ enum PanicService {
         content.body  = message
         content.sound = .default
 
-        // Dispara casi inmediato (1s)
+        // Disparar casi inmediato
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         try await UNUserNotificationCenter.current().add(request)

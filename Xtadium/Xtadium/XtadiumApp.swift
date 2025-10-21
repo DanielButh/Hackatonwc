@@ -1,8 +1,15 @@
 import SwiftUI
+import UserNotifications
 
 @main
-struct WorldCupTicketsApp: App {
+struct XtadiumApp: App {
     @StateObject private var session = SessionViewModel()
+    private let notifDelegate = NotificationDelegate() // 👈 instancia
+
+    init() {
+        // Asignar delegado para mostrar notifs en foreground
+        UNUserNotificationCenter.current().delegate = notifDelegate
+    }
 
     var body: some Scene {
         WindowGroup {

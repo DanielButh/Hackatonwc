@@ -10,7 +10,7 @@
         "ticket_id": "MX-AZT-0001",
         "event": {
           "name": "Juego inaugural",
-          "date": "2026-06-11T18:00:00-05:00",
+          "date": "2026-10-21T18:15:00-05:00",
           "venue": {
             "stadium": "Estadio Azteca",
             "city": "Ciudad de México",
@@ -42,7 +42,7 @@
         "status": "valid",
         "barcode": "https://via.placeholder.com/300x300.png?text=GDL-AKR-0002",
         "delivery_method": "mobile",
-        "purchase_date": "2026-05-20T11:00:00Z"
+        "purchase_date": "2025-10-21T18:15:00-05:00"
       },
       {
         "ticket_id": "MTY-BBVA-0012",

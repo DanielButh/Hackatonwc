@@ -37,5 +37,9 @@ struct AuthedTabView: View {
 #Preview {
     let session = SessionViewModel()
     session.isAuthenticated = true
+    session.token = "MOCK_TOKEN"
+    session.userId = "user_001"
+    session.displayName = "Juan Pérez"
+
     return AuthedTabView().environmentObject(session)
 }

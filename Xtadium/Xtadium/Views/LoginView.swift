@@ -12,6 +12,7 @@ struct LoginView: View {
                 Text("Iniciar sesión")
                     .font(.largeTitle).bold()
 
+                
                 TextField("Email", text: $email)
                     .textInputAutocapitalization(.never)
                     .keyboardType(.emailAddress)
@@ -54,7 +55,6 @@ struct LoginView: View {
                 Spacer()
             }
             .padding()
-            .navigationTitle("Ticketmaster (Mock)")
         }
     }
 }
