@@ -10,8 +10,6 @@ import SwiftUI
 struct LoginView: View {
     @State private var email: String = ""
     @State private var password: String = ""
-    @State private var emailError: String?
-    @State private var passwordError: String?
 
     // Estado de navegación
     @State private var isShowingHome = false
@@ -36,13 +34,8 @@ struct LoginView: View {
 
                     // Botón de login que activa la navegación
                     Button {
-                        emailError = validateEmail(email)
-                        passwordError = validatePassword(password)
-
-                        // Solo navegar si no hay errores
-                        if emailError == nil && passwordError == nil {
-                            isShowingHome = true
-                        }
+                        // Navegar directamente sin validaciones
+                        isShowingHome = true
                     } label: {
                         Text("Inicio sesión")
                             .font(.system(size: 18, weight: .bold))
@@ -64,18 +57,6 @@ struct LoginView: View {
                         }
                     }
                     .padding()
-
-                    // Errores (si los hay)
-                    if let emailError = emailError {
-                        Text(emailError)
-                            .foregroundColor(.red)
-                            .font(.caption)
-                    }
-                    if let passwordError = passwordError {
-                        Text(passwordError)
-                            .foregroundColor(.red)
-                            .font(.caption)
-                    }
                 }
                 .padding(.horizontal, 20)
                 .padding(.top, 32)
@@ -85,6 +66,8 @@ struct LoginView: View {
                     .foregroundColor(.blue)
                     .padding(.bottom, 20)
 
+                
+                
                 // Navegación oculta controlada por estado
                 NavigationLink(destination: MapView()) {
                     Text("Mapa")
@@ -97,18 +80,8 @@ struct LoginView: View {
             .navigationTitle("Inicio de sesión")
         }
     }
-
-    // Validaciones
-    func validateEmail(_ email: String) -> String? {
-        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
-        return emailPredicate.evaluate(with: email) ? nil : "Correo inválido"
-    }
-
-    func validatePassword(_ password: String) -> String? {
-        password.count < 8 ? "La contraseña debe tener al menos 8 caracteres" : nil
-    }
 }
+
 
 #Preview {
     LoginView()
