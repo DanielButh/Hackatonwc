@@ -1,17 +1,20 @@
-//
-//  XtadiumApp.swift
-//  Xtadium
-//
-//  Created by MacBook 6 on 21/10/25.
-//
-
 import SwiftUI
 
 @main
-struct XtadiumApp: App {
+struct WorldCupTicketsApp: App {
+    @StateObject private var session = SessionViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Group {
+                if session.isAuthenticated {
+                    AuthedTabView()
+                        .environmentObject(session)
+                } else {
+                    LoginView()
+                        .environmentObject(session)
+                }
+            }
         }
     }
 }

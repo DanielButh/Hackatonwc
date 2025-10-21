@@ -1,0 +1,162 @@
+[
+  {
+    "user": {
+      "id": "user_001",
+      "name": "Juan Pérez",
+      "email": "juanperez@email.com"
+    },
+    "tickets": [
+      {
+        "ticket_id": "MX-AZT-0001",
+        "event": {
+          "name": "Juego inaugural",
+          "date": "2026-06-11T18:00:00-05:00",
+          "venue": {
+            "stadium": "Estadio Azteca",
+            "city": "Ciudad de México",
+            "country": "México",
+            "image": "estadio-azteca"
+          }
+        },
+        "seat": { "section": "A", "row": "12", "seat_number": "14" },
+        "price": { "currency": "USD", "amount": 350.0 },
+        "status": "valid",
+        "barcode": "https://via.placeholder.com/300x300.png?text=MX-AZT-0001",
+        "delivery_method": "mobile",
+        "purchase_date": "2026-05-12T14:30:00Z"
+      },
+      {
+        "ticket_id": "GDL-AKR-0002",
+        "event": {
+          "name": "Juego 2",
+          "date": "2026-06-11T21:00:00-05:00",
+          "venue": {
+            "stadium": "Estadio Akron",
+            "city": "Guadalajara",
+            "country": "México",
+            "image": "estadio-akron"
+          }
+        },
+        "seat": { "section": "B", "row": "8", "seat_number": "21" },
+        "price": { "currency": "USD", "amount": 220.0 },
+        "status": "valid",
+        "barcode": "https://via.placeholder.com/300x300.png?text=GDL-AKR-0002",
+        "delivery_method": "mobile",
+        "purchase_date": "2026-05-20T11:00:00Z"
+      },
+      {
+        "ticket_id": "MTY-BBVA-0012",
+        "event": {
+          "name": "Juego 12",
+          "date": "2026-06-14T16:00:00-05:00",
+          "venue": {
+            "stadium": "Estadio BBVA",
+            "city": "Monterrey",
+            "country": "México",
+            "image": "estadio-bbva"
+          }
+        },
+        "seat": { "section": "C", "row": "20", "seat_number": "5" },
+        "price": { "currency": "USD", "amount": 280.0 },
+        "status": "valid",
+        "barcode": "https://via.placeholder.com/300x300.png?text=MTY-BBVA-0012",
+        "delivery_method": "mobile",
+        "purchase_date": "2026-05-10T09:15:00Z"
+      },
+      {
+        "ticket_id": "MX-AZT-0024",
+        "event": {
+          "name": "Juego 24",
+          "date": "2026-06-17T19:00:00-05:00",
+          "venue": {
+            "stadium": "Estadio Azteca",
+            "city": "Ciudad de México",
+            "country": "México",
+            "image": "estadio-azteca"
+          }
+        },
+        "seat": { "section": "A", "row": "10", "seat_number": "3" },
+        "price": { "currency": "USD", "amount": 310.0 },
+        "status": "valid",
+        "barcode": "https://via.placeholder.com/300x300.png?text=MX-AZT-0024",
+        "delivery_method": "mobile",
+        "purchase_date": "2026-05-18T12:00:00Z"
+      }
+    ],
+    "meta": {
+      "source": "Local JSON",
+      "last_updated": "2026-05-21T10:00:00Z"
+    }
+  },
+  {
+    "user": {
+      "id": "user_002",
+      "name": "María Gómez",
+      "email": "maria@example.com"
+    },
+    "tickets": [
+      {
+        "ticket_id": "GDL-AKR-0048",
+        "event": {
+          "name": "Juego 48",
+          "date": "2026-06-23T20:00:00-05:00",
+          "venue": {
+            "stadium": "Estadio Akron",
+            "city": "Guadalajara",
+            "country": "México",
+            "image": "estadio-akron"
+          }
+        },
+        "seat": { "section": "D", "row": "15", "seat_number": "9" },
+        "price": { "currency": "USD", "amount": 295.0 },
+        "status": "valid",
+        "barcode": "https://via.placeholder.com/300x300.png?text=GDL-AKR-0048",
+        "delivery_method": "mobile",
+        "purchase_date": "2026-05-22T16:45:00Z"
+      },
+      {
+        "ticket_id": "MTY-BBVA-0054",
+        "event": {
+          "name": "Juego 54",
+          "date": "2026-06-24T20:30:00-05:00",
+          "venue": {
+            "stadium": "Estadio BBVA",
+            "city": "Monterrey",
+            "country": "México",
+            "image": "estadio-bbva"
+          }
+        },
+        "seat": { "section": "E", "row": "3", "seat_number": "18" },
+        "price": { "currency": "USD", "amount": 305.0 },
+        "status": "valid",
+        "barcode": "https://via.placeholder.com/300x300.png?text=MTY-BBVA-0054",
+        "delivery_method": "mobile",
+        "purchase_date": "2026-05-23T08:30:00Z"
+      },
+      {
+        "ticket_id": "MX-AZT-0092",
+        "event": {
+          "name": "Juego 92",
+          "date": "2026-07-05T19:00:00-05:00",
+          "venue": {
+            "stadium": "Estadio Azteca",
+            "city": "Ciudad de México",
+            "country": "México",
+            "image": "estadio-azteca"
+          }
+        },
+        "seat": { "section": "F", "row": "25", "seat_number": "2" },
+        "price": { "currency": "USD", "amount": 420.0 },
+        "status": "valid",
+        "barcode": "https://via.placeholder.com/300x300.png?text=MX-AZT-0092",
+        "delivery_method": "mobile",
+        "purchase_date": "2026-06-01T10:00:00Z"
+      }
+    ],
+    "meta": {
+      "source": "Local JSON",
+      "last_updated": "2026-05-21T10:00:00Z"
+    }
+  }
+]
+

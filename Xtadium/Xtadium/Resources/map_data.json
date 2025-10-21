@@ -1,0 +1,74 @@
+[
+  {
+    "estadio": {
+      "nombre": "Estadio Azteca",
+      "latitud": 19.3029,
+      "longitud": -99.1505
+    },
+    "restaurantes": [
+      {
+        "nombre": "INYEON Restaurante",
+        "latitud": 19.2980,
+        "longitud": -99.1590
+      },
+      {
+        "nombre": "Caldos de Gallina Coapa Estadio Azteca",
+        "latitud": 19.3215,
+        "longitud": -99.1698
+      },
+      {
+        "nombre": "La Casa del Sushi (Cto Estadio Azteca)",
+        "latitud": 19.2990,
+        "longitud": -99.1550
+      }
+    ]
+  },
+  {
+    "estadio": {
+      "nombre": "Estadio Akron",
+      "latitud": 20.6739,
+      "longitud": -103.4617
+    },
+    "restaurantes": [
+      {
+        "nombre": "Los Arcos – Calz. Lázaro Cárdenas 3549",
+        "latitud": 20.7400,
+        "longitud": -103.4070
+      },
+      {
+        "nombre": "La Moresca – Blvd. Puerta de Hierro 4965",
+        "latitud": 20.7250,
+        "longitud": -103.4040
+      },
+      {
+        "nombre": "Casa Prime Puerta de Hierro – Real de Acueducto 210",
+        "latitud": 20.7285,
+        "longitud": -103.4065
+      }
+    ]
+  },
+  {
+    "estadio": {
+      "nombre": "Estadio BBVA",
+      "latitud": 25.6486,
+      "longitud": -100.2894
+    },
+    "restaurantes": [
+      {
+        "nombre": "Azul Restaurant Bar – Av. Pablo Livas 2204, Guadalupe NL",
+        "latitud": 25.6690,
+        "longitud": -100.2445
+      },
+      {
+        "nombre": "Taquería Las Delicias – Única 1603, La Quinta, Guadalupe NL",
+        "latitud": 25.6720,
+        "longitud": -100.2420
+      },
+      {
+        "nombre": "La Catarina 403 – Av. Paseo La Rioja 245, Monterrey NL",
+        "latitud": 25.6560,
+        "longitud": -100.2940
+      }
+    ]
+  }
+]

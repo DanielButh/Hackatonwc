@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         NavigationView {
-            ZStack {
+            ZStack () {
                 Color(#colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.937254902, alpha: 1))
                     .ignoresSafeArea()
                 
