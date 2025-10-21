@@ -9,29 +9,51 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        ZStack {
-            
-            Text("Hello World")
-            ScrollView {
-                Text("Hola")
-                Text("Hola")
-                Text("Hola")
-                Text("Hola")
-                Text("Hola")
-                Text("Hola")
-                Text("Hola")
-                Text("Hola")
-                Text("Hola")
-            }
-            
-            VStack {
-                Spacer()
-                BottomNavBarView()
+        NavigationView {
+            ZStack {
+                Color(#colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.937254902, alpha: 1))
+                    .ignoresSafeArea()
+                
+                ScrollView {
+                    VStack (alignment: .leading) {
+                        
+                        AppBarView()
+                    }
+                }
+                
+                VStack {
+                    Spacer()
+                    BottomNavBarView()
+                }
+                
             }
         }
     }
 }
 
+struct AppBarView: View {
+    var body: some View {
+        HStack {
+            Button(action: {}) {
+                Image(systemName: "map")
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10.0)
+            }
+            
+            Spacer()
+            
+            Button(action: {}) {
+                Image(systemName: "map")
+                    .resizable()
+                    .frame(width: 42, height: 42)
+                    .cornerRadius(10.0)
+            }
+        }
+        .padding(.horizontal)
+    }
+}
+    
 struct BottomNavBarView: View {
     var body: some View {
         NavigationView {

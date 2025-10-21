@@ -19,7 +19,7 @@ struct Home2View: View {
                 Color(#colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.937254902, alpha: 1))
                     .ignoresSafeArea()
                 
-                ScrollView (showsIndicators: false) {
+                ScrollView {
                     VStack (alignment: .leading) {
                         
                         AppBarView()
