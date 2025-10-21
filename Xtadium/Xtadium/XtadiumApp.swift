@@ -18,7 +18,7 @@ struct XtadiumApp: App {
                     AuthedTabView()
                         .environmentObject(session)
                 } else {
-                    LoginView()
+                    LoadView()
                         .environmentObject(session)
                 }
             }
